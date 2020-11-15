@@ -10,7 +10,7 @@ else:
     from tkinter.ttk import Combobox
 
 root = Tk()
-version = '0.1.0'
+version = '0.1.1'
 title = 'PWAATeditor v' + version
     
     
@@ -116,7 +116,7 @@ class SettingsTab:
     textBoxTransparencyAddress   = '12D2'
     languageAddress              = '12D4'
     fullscreenAddress            = '12D6'
-    verticalSyncAddress          = '12D8'
+    verticalSyncAddress          = '12E0'
     
     titleList = ['Ace Attorney', 'Justice For All', 'Trials and Tribulations', 'Background Music', 'Sound Effects', 'Text Skip', 'Screen Shake', 'Vibration', 'Text Box Transparency', 'Language', 'Fullscreen (PC)', 'Vertical Sync (PC)']
     chapterList = ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5']
