@@ -12,9 +12,11 @@ if platform.system() == "Windows":
     from tkinter.ttk import *
 else:
     from tkinter.ttk import Progressbar
+    from tkinter.ttk import Notebook
+    from tkinter.ttk import Combobox
 
 root = Tk()
-version = "0.0.1"
+version = "0.0.2"
 title = "PWAATeditor v" + version
     
     
