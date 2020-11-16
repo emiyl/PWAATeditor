@@ -5,6 +5,7 @@ Phoenix Wright Ace Attorney Trilogy Save Editor
 
 - Unlocking Chapters
 - Changing in-game settings
+- Setting custom resolutions
 
 ## Compatibility
 
@@ -13,6 +14,10 @@ This has been tested on the PC and Nintendo Switch versions of the game.
 Since the addresses were the same for both devices, I imagine this tool will work on other consoles, but I haven't tested.
 
 Always make a backup and use at your own risk!
+
+## Known Issues
+
+- After closing a save file, you must restart the program before you can alter any save files again
 
 ## Credits
 
