@@ -10,7 +10,7 @@ else:
     from tkinter.ttk import Combobox
 
 root = Tk()
-version = '0.2.0'
+version = '0.2.1'
 title = 'PWAATeditor v' + version
 
 class App:
@@ -106,21 +106,27 @@ class EditorGUI:
     languageAddress              = '12D4'
     fullscreenAddress            = '12D6'
     verticalSyncAddress          = '12E0'
+    
+    gameChapterCount = [5,4,5]
+    gameChapterText  = ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5']
+    gameChapterList  = [[], [], []]
+    for game in range(0,3):
+        for chapter in range (0,gameChapterCount[game]):
+            gameChapterList[game].append(gameChapterText[chapter])
 
-    chapterList = ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5']
     backgroundMusicVolumeText = ['0', '1', '2', '3', '4']
-    SoundEffectsVolumeText = ['0', '1', '2', '3', '4']
-    textSkipText = ['Off', 'Single Box Skip', 'Full Auto-Skip']
-    screenShakeText = ['Off', 'On']
-    vibrationText = ['Off', 'On']
-    textBoxTransparencyText = ['Off', 'Low', 'High']
-    languageText = ['Japanese', 'English', 'French', 'German', 'Korean', 'Chinese (Simplified)', 'Chinese (Traditional)']
-    fullScreenText = ['Windowed', 'Fullscreen']
-    verticalSyncText = ['Off', 'On']
+    SoundEffectsVolumeText    = ['0', '1', '2', '3', '4']
+    textSkipText              = ['Off', 'Single Box Skip', 'Full Auto-Skip']
+    screenShakeText           = ['Off', 'On']
+    vibrationText             = ['Off', 'On']
+    textBoxTransparencyText   = ['Off', 'Low', 'High']
+    languageText              = ['Japanese', 'English', 'French', 'German', 'Korean', 'Chinese (Simplified)', 'Chinese (Traditional)']
+    fullScreenText            = ['Windowed', 'Fullscreen']
+    verticalSyncText          = ['Off', 'On']
 
     titleList = ['Ace Attorney', 'Justice For All', 'Trials and Tribulations', 'Background Music', 'Sound Effects', 'Text Skip', 'Screen Shake', 'Vibration', 'Text Box Transparency', 'Language', 'Fullscreen (PC)', 'Vertical Sync (PC)']
     addressList = [gameOneAddress, gameTwoAddress, gameThreeAddress, backgroundMusicVolumeAddress, soundEffectsVolumeAddress, textSkipAddress, screenShakeAddress, vibrationAddress, textBoxTransparencyAddress, languageAddress, fullscreenAddress, verticalSyncAddress]
-    textList = [chapterList, chapterList, chapterList, backgroundMusicVolumeText, SoundEffectsVolumeText, textSkipText, screenShakeText, vibrationText, textBoxTransparencyText, languageText, fullScreenText, verticalSyncText]
+    textList = [gameChapterList[0], gameChapterList[1], gameChapterList[2], backgroundMusicVolumeText, SoundEffectsVolumeText, textSkipText, screenShakeText, vibrationText, textBoxTransparencyText, languageText, fullScreenText, verticalSyncText]
 
     values = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
     elementCount = len(addressList)
