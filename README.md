@@ -22,6 +22,6 @@ Always make a backup and use at your own risk!
 ## Credits
 
 - [@summertriangle-dev](https://github.com/summertriangle-dev)
-- [Amy While](https://github.com/CharlieWhile13)
+- [Amy While](https://github.com/elihwyma)
 
 If you would like to contribute, you can view more info about the save file [here](https://gist.github.com/emiyl/1435ce18a6b1e0a5c2a74e15c19f4884).
